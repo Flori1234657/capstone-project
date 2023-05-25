@@ -1,0 +1,873 @@
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header div img {
+  width: 45%;
+  margin-left: 2vw;
+  font-size: clamp(3.44rem, 2.06rem + 6.91vw, 5.94rem);
+  padding: 0.15em 0;
+}
+header div svg {
+  width: clamp(3.44rem, 2.06rem + 6.91vw, 5.94rem);
+}
+header nav {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+header nav ul li {
+  font-family: "Markazi Text", serif;
+  font-size: clamp(1.19rem, 0.19rem + 5vw, 3rem);
+  font-weight: 500;
+  color: #333333;
+  padding: 0 0 0.3em 0;
+  margin: 0;
+  border-bottom: 1px solid #f4ce14;
+  cursor: pointer;
+}
+header nav ul li:hover, header nav ul li:focus {
+  color: #495e57;
+}
+header nav ul li:last-child {
+  margin-bottom: 1em;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .HeroSection {
+  width: 100%;
+  background-color: #495e57;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+main .HeroSection article {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-left: 6vw;
+}
+main .HeroSection article > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 0.7;
+}
+main .HeroSection article > div h1 {
+  font-family: "Markazi Text", serif;
+  font-size: clamp(3rem, 0.55rem + 12.26vw, 7.44rem);
+  font-weight: 500;
+  color: #f4ce14;
+  padding: 0.7em 0 0 0;
+  margin: 0;
+}
+main .HeroSection article > div h2 {
+  font-family: "Markazi Text", serif;
+  font-size: clamp(2.5rem, 0.46rem + 10.19vw, 6.19rem);
+  font-weight: 400;
+  color: #edefee;
+  padding: 0;
+  margin: 0;
+}
+main .HeroSection article p {
+  font-family: "Karla", sans-serif;
+  font-size: clamp(1rem, 0.17rem + 4.14vw, 2.5rem);
+  font-weight: 300;
+  color: #edefee;
+  padding: 0;
+  margin: 1.5em 0 0 0;
+}
+main .HeroSection article button {
+  font-family: "Markazi Text", serif;
+  font-size: clamp(1.19rem, 0.19rem + 5vw, 3rem);
+  font-weight: 600;
+  color: #333333;
+  padding: 0.3em 0.6em;
+  margin: 0.5em 0 2em 0;
+  background-color: #f4ce14;
+  border: none;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+main .Highlights {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .Highlights > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main .Highlights > div h2 {
+  font-family: "Markazi Text", serif;
+  font-size: clamp(2.5rem, 0.46rem + 10.19vw, 6.19rem);
+  font-weight: 600;
+  color: #333333;
+  padding: 0;
+  margin: 0.7em 0 0 0;
+}
+main .Highlights > div button {
+  font-family: "Markazi Text", serif;
+  font-size: clamp(1.19rem, 0.19rem + 5vw, 3rem);
+  font-weight: 600;
+  color: #333333;
+  padding: 0.3em 0.6em;
+  margin: 0.5em 0 2em 0;
+  background-color: #f4ce14;
+  border: none;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+main .Highlights > article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+main .Highlights > article section {
+  width: 80%;
+  background-color: #edefee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-size: clamp(0.81rem, 0.12rem + 3.45vw, 2.06rem);
+  border-radius: 0.5em;
+  margin-bottom: 2em;
+  overflow: hidden;
+}
+main .Highlights > article section img {
+  width: 100%;
+}
+main .Highlights > article section div {
+  width: 85%;
+  margin-left: 7%;
+}
+main .Highlights > article section div h3 {
+  font-family: "Markazi Text", serif;
+  font-size: clamp(1.75rem, 0.37rem + 6.9vw, 4.25rem);
+  font-weight: 600;
+  color: #333333;
+  padding: 0;
+  margin: 0.5em 0 0 0;
+}
+main .Highlights > article section div p {
+  font-family: "Karla", sans-serif;
+  font-size: clamp(0.81rem, 0.12rem + 3.45vw, 2.06rem);
+  font-weight: 500;
+  color: #333333;
+  padding: 0;
+  margin: 0;
+}
+main .Highlights > article section a {
+  font-family: "Karla", sans-serif;
+  font-size: clamp(1rem, 0.17rem + 4.14vw, 2.5rem);
+  font-weight: 700;
+  color: #333333;
+  padding: 0 1.15em;
+  margin: 1em 0 0 0;
+  padding-bottom: 1.32em;
+  cursor: pointer;
+}
+main .Highlights > article section a:hover,
+main .Highlights > article section a:focus {
+  text-decoration: underline;
+}
+main .Testimonials {
+  width: 100%;
+  background-color: #edefee;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .Testimonials h1 {
+  font-family: "Markazi Text", serif;
+  font-size: clamp(2.5rem, 0.46rem + 10.19vw, 6.19rem);
+  font-weight: 600;
+  color: #495e57;
+  padding: 0;
+  margin: 0.7em 0 0.6em 0;
+}
+main .Testimonials article {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .Testimonials article section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #f4ce14;
+  font-size: clamp(0.81rem, 0.12rem + 3.45vw, 2.06rem);
+  border-radius: 0.5em;
+  margin-bottom: 2em;
+}
+main .Testimonials article section h4 {
+  font-family: "Karla", sans-serif;
+  font-size: clamp(0.81rem, 0.12rem + 3.45vw, 2.06rem);
+  font-weight: 500;
+  color: #333333;
+  padding: 1em 0 0 0;
+  margin: 0 0 0.5em 1.1em;
+}
+main .Testimonials article section div {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 5%;
+}
+main .Testimonials article section div img {
+  width: 20%;
+  border-radius: 50%;
+}
+main .Testimonials article section div h2 {
+  font-family: "Markazi Text", serif;
+  font-size: clamp(1.75rem, 0.37rem + 6.9vw, 4.25rem);
+  font-weight: 600;
+  color: #333333;
+  padding: 0 0.5em;
+  margin: 0;
+}
+main .Testimonials article section h3 {
+  font-family: "Karla", sans-serif;
+  font-size: clamp(1rem, 0.17rem + 4.14vw, 2.5rem);
+  font-weight: 700;
+  color: #333333;
+  padding: 1em 0;
+  margin: 0 0 0 0.9em;
+}
+main .About {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: clamp(0.81rem, 0.12rem + 3.45vw, 2.06rem);
+  margin-bottom: 1.8em;
+}
+main .About article {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .About article div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 0.7;
+}
+main .About article div h2 {
+  font-family: "Markazi Text", serif;
+  font-size: clamp(2.5rem, 0.46rem + 10.19vw, 6.19rem);
+  font-weight: 600;
+  color: #495e57;
+  padding: 0;
+  margin: 0.7em 0 0 0;
+}
+main .About article div h3 {
+  font-family: "Markazi Text", serif;
+  font-size: clamp(2.06rem, 0.37rem + 8.45vw, 5.13rem);
+  font-weight: 600;
+  color: #333333;
+  padding: 0;
+  margin: 0;
+}
+main .About article p {
+  font-family: "Karla", sans-serif;
+  font-size: clamp(1rem, 0.17rem + 4.14vw, 2.5rem);
+  font-weight: 500;
+  color: #333333;
+  padding: 0 0 2em 0;
+  margin: 1.5em 0 0 0;
+}
+main .About img {
+  width: 80%;
+}
+
+footer {
+  width: 100%;
+  background-color: #495e57;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer img {
+  width: 50%;
+}
+footer nav {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style-type: none;
+  align-self: flex-start;
+}
+footer nav ul li:first-child {
+  font-family: "Karla", sans-serif;
+  font-size: clamp(1.19rem, 0.19rem + 5vw, 3rem);
+  font-weight: 500;
+  color: #edefee;
+  padding: 0 0 0.5em 0;
+  margin: 0;
+}
+footer nav ul li {
+  font-family: "Markazi Text", serif;
+  font-size: clamp(1rem, 0.17rem + 4.14vw, 2.5rem);
+  font-weight: 400;
+  color: #edefee;
+  padding: 0 0 0.3em 0;
+  margin: 0;
+}
+footer nav ul li:hover, footer nav ul li:focus {
+  text-decoration: underline;
+}
+footer nav ul li:last-child {
+  padding-bottom: 1.5em;
+}
+
+@media only screen and (min-width: 900px) and (orientation: landscape) {
+  body header {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body header img {
+    width: 15%;
+    margin: 0;
+    font-size: clamp(1.19rem, 0.43rem + 1.34vw, 1.44rem);
+    padding: 0.5em 0;
+  }
+  body header nav {
+    width: 55%;
+    flex-direction: row;
+  }
+  body header nav ul {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body header nav ul li {
+    font-size: clamp(1.19rem, 0.43rem + 1.34vw, 1.44rem);
+    margin: 0;
+    border: none;
+  }
+  body header nav ul li:last-child {
+    margin-bottom: 0;
+  }
+  body main .HeroSection {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  body main .HeroSection article {
+    margin-left: 0;
+    width: 30%;
+  }
+  body main .HeroSection article > div h1 {
+    font-size: clamp(3rem, 1.31rem + 3.01vw, 3.56rem);
+  }
+  body main .HeroSection article > div h2 {
+    font-size: clamp(2.5rem, 0.99rem + 2.68vw, 3rem);
+  }
+  body main .HeroSection article p {
+    font-size: clamp(1rem, 0.44rem + 1vw, 1.19rem);
+  }
+  body main .HeroSection article button {
+    font-size: clamp(1.19rem, 0.43rem + 1.34vw, 1.44rem);
+  }
+  body main .HeroSection img {
+    width: 30%;
+    margin-left: 9vw;
+  }
+  body main .Highlights > div {
+    width: 75%;
+    flex-direction: row;
+    font-size: clamp(1.19rem, 0.43rem + 1.34vw, 1.44rem);
+    margin-top: 2em;
+  }
+  body main .Highlights > div h2 {
+    font-size: clamp(2.5rem, 0.99rem + 2.68vw, 3rem);
+    margin: 0;
+  }
+  body main .Highlights > div button {
+    font-size: clamp(1.19rem, 0.43rem + 1.34vw, 1.44rem);
+    margin: 0;
+  }
+  body main .Highlights > article {
+    width: 75%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body main .Highlights > article section {
+    width: 32%;
+    font-size: clamp(0.81rem, 0.25rem + 1vw, 1rem);
+  }
+  body main .Highlights > article section div h3 {
+    font-size: clamp(1.75rem, 0.81rem + 1.67vw, 2.06rem);
+  }
+  body main .Highlights > article section div p {
+    font-size: clamp(0.81rem, 0.25rem + 1vw, 1rem);
+  }
+  body main .Highlights > article section a {
+    font-size: clamp(1rem, 0.44rem + 1vw, 1.19rem);
+  }
+  body main .Testimonials h1 {
+    font-size: clamp(2.5rem, 0.99rem + 2.68vw, 3rem);
+  }
+  body main .Testimonials article {
+    width: 75%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body main .Testimonials article section {
+    width: 24%;
+    font-size: clamp(0.81rem, 0.25rem + 1vw, 1rem);
+  }
+  body main .Testimonials article section h4 {
+    font-size: clamp(0.81rem, 0.25rem + 1vw, 1rem);
+  }
+  body main .Testimonials article section div {
+    width: 50%;
+  }
+  body main .Testimonials article section div img {
+    width: 50%;
+  }
+  body main .Testimonials article section div h2 {
+    font-size: clamp(1.75rem, 0.81rem + 1.67vw, 2.06rem);
+  }
+  body main .Testimonials article section h3 {
+    font-size: clamp(1rem, 0.44rem + 1vw, 1.19rem);
+  }
+  body main .About {
+    font-size: clamp(0.81rem, 0.25rem + 1vw, 1rem);
+    flex-direction: row;
+    justify-content: center;
+    gap: 14em;
+  }
+  body main .About article {
+    width: 30%;
+  }
+  body main .About article div h2 {
+    font-size: clamp(2.5rem, 0.99rem + 2.68vw, 3rem);
+  }
+  body main .About article div h3 {
+    font-size: clamp(2.06rem, 0.75rem + 2.34vw, 2.5rem);
+  }
+  body main .About article p {
+    font-size: clamp(1rem, 0.44rem + 1vw, 1.19rem);
+  }
+  body main .About img {
+    width: 25%;
+  }
+  body footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body footer img {
+    width: 20%;
+  }
+  body footer nav {
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body footer nav ul {
+    width: 32%;
+  }
+  body footer nav ul li:first-child {
+    padding-top: 2em;
+    font-size: clamp(1.19rem, 0.43rem + 1.34vw, 1.44rem);
+  }
+  body footer nav ul li {
+    font-size: clamp(1rem, 0.44rem + 1vw, 1.19rem);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body header {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body header img {
+    width: 15%;
+    font-size: clamp(1.19rem, 0.06rem + 1.5vw, 1.75rem);
+  }
+  body header nav {
+    width: 45%;
+  }
+  body header nav ul {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body header nav ul li {
+    font-size: clamp(1.19rem, 0.06rem + 1.5vw, 1.75rem);
+    margin: 0;
+    border: none;
+  }
+  body header nav ul li:last-child {
+    margin-bottom: 0;
+  }
+  body main .HeroSection {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  body main .HeroSection article {
+    margin-left: 0;
+    width: 30%;
+  }
+  body main .HeroSection article > div h1 {
+    font-size: clamp(3rem, 0.37rem + 3.51vw, 4.31rem);
+  }
+  body main .HeroSection article > div h2 {
+    font-size: clamp(2.5rem, 0.37rem + 2.84vw, 3.56rem);
+  }
+  body main .HeroSection article p {
+    font-size: clamp(1rem, 0.12rem + 1.17vw, 1.44rem);
+  }
+  body main .HeroSection article button {
+    font-size: clamp(1.19rem, 0.06rem + 1.5vw, 1.75rem);
+  }
+  body main .HeroSection img {
+    width: 25%;
+    margin-left: 9vw;
+  }
+  body main .Highlights > div {
+    width: 75%;
+    flex-direction: row;
+    font-size: clamp(1.19rem, 0.06rem + 1.5vw, 1.75rem);
+    margin-top: 2em;
+  }
+  body main .Highlights > div h2 {
+    font-size: clamp(2.5rem, 0.37rem + 2.84vw, 3.56rem);
+    margin: 0;
+  }
+  body main .Highlights > div button {
+    font-size: clamp(1.19rem, 0.06rem + 1.5vw, 1.75rem);
+    margin: 0;
+  }
+  body main .Highlights > article {
+    width: 75%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body main .Highlights > article section {
+    width: 32%;
+    font-size: clamp(0.81rem, 0.06rem + 1vw, 1.19rem);
+  }
+  body main .Highlights > article section div h3 {
+    font-size: clamp(1.75rem, 0.25rem + 2vw, 2.5rem);
+  }
+  body main .Highlights > article section div p {
+    font-size: clamp(0.81rem, 0.06rem + 1vw, 1.19rem);
+    padding-right: 3em;
+  }
+  body main .Highlights > article section a {
+    font-size: clamp(1rem, 0.12rem + 1.17vw, 1.44rem);
+  }
+  body main .Testimonials h1 {
+    font-size: clamp(2.5rem, 0.37rem + 2.84vw, 3.56rem);
+  }
+  body main .Testimonials article {
+    width: 75%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body main .Testimonials article section {
+    width: 24%;
+    font-size: clamp(0.81rem, 0.06rem + 1vw, 1.19rem);
+  }
+  body main .Testimonials article section h4 {
+    font-size: clamp(0.81rem, 0.06rem + 1vw, 1.19rem);
+  }
+  body main .Testimonials article section div {
+    width: 50%;
+  }
+  body main .Testimonials article section div img {
+    width: 50%;
+  }
+  body main .Testimonials article section div h2 {
+    font-size: clamp(1.75rem, 0.25rem + 2vw, 2.5rem);
+  }
+  body main .Testimonials article section h3 {
+    font-size: clamp(1rem, 0.12rem + 1.17vw, 1.44rem);
+  }
+  body main .About {
+    font-size: clamp(0.81rem, 0.06rem + 1vw, 1.19rem);
+    flex-direction: row;
+    justify-content: center;
+    gap: 14em;
+  }
+  body main .About article {
+    width: 30%;
+  }
+  body main .About article div h2 {
+    font-size: clamp(2.5rem, 0.37rem + 2.84vw, 3.56rem);
+  }
+  body main .About article div h3 {
+    font-size: clamp(2.06rem, 0.18rem + 2.5vw, 3rem);
+  }
+  body main .About article p {
+    font-size: clamp(1rem, 0.12rem + 1.17vw, 1.44rem);
+  }
+  body main .About img {
+    width: 25%;
+  }
+  body footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body footer img {
+    width: 20%;
+  }
+  body footer nav {
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body footer nav ul {
+    width: 32%;
+  }
+  body footer nav ul li:first-child {
+    padding-top: 2em;
+    font-size: clamp(1.19rem, 0.06rem + 1.5vw, 1.75rem);
+  }
+  body footer nav ul li {
+    font-size: clamp(1rem, 0.12rem + 1.17vw, 1.44rem);
+  }
+}
+@media only screen and (min-width: 1800px) {
+  body header {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body header img {
+    width: 15%;
+    font-size: clamp(1.75rem, -0.18rem + 1.71vw, 2.5rem);
+  }
+  body header nav {
+    width: 45%;
+  }
+  body header nav ul {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body header nav ul li {
+    font-size: clamp(1.75rem, -0.18rem + 1.71vw, 2.5rem);
+    margin: 0;
+    border: none;
+  }
+  body header nav ul li:last-child {
+    margin-bottom: 0;
+  }
+  body main .HeroSection {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  body main .HeroSection article {
+    margin-left: 0;
+    width: 30%;
+  }
+  body main .HeroSection article > div h1 {
+    font-size: clamp(4.31rem, -0.51rem + 4.29vw, 6.19rem);
+  }
+  body main .HeroSection article > div h2 {
+    font-size: clamp(3.56rem, -0.62rem + 3.71vw, 5.19rem);
+  }
+  body main .HeroSection article p {
+    font-size: clamp(1.44rem, -0.17rem + 1.43vw, 2.06rem);
+  }
+  body main .HeroSection article button {
+    font-size: clamp(1.75rem, -0.18rem + 1.71vw, 2.5rem);
+  }
+  body main .HeroSection img {
+    width: 25%;
+    margin-left: 9vw;
+  }
+  body main .Highlights > div {
+    width: 75%;
+    flex-direction: row;
+    font-size: clamp(1.75rem, -0.18rem + 1.71vw, 2.5rem);
+    margin-top: 2em;
+  }
+  body main .Highlights > div h2 {
+    font-size: clamp(3.56rem, -0.62rem + 3.71vw, 5.19rem);
+    margin: 0;
+  }
+  body main .Highlights > div button {
+    font-size: clamp(1.75rem, -0.18rem + 1.71vw, 2.5rem);
+    margin: 0;
+  }
+  body main .Highlights > article {
+    width: 75%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body main .Highlights > article section {
+    width: 32%;
+    font-size: clamp(1.19rem, -0.26rem + 1.29vw, 1.75rem);
+  }
+  body main .Highlights > article section div h3 {
+    font-size: clamp(2.5rem, -0.23rem + 2.43vw, 3.56rem);
+  }
+  body main .Highlights > article section div p {
+    font-size: clamp(1.19rem, -0.26rem + 1.29vw, 1.75rem);
+    padding-right: 3em;
+  }
+  body main .Highlights > article section a {
+    font-size: clamp(1.44rem, -0.17rem + 1.43vw, 2.06rem);
+  }
+  body main .Testimonials h1 {
+    font-size: clamp(3.56rem, -0.62rem + 3.71vw, 5.19rem);
+  }
+  body main .Testimonials article {
+    width: 75%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body main .Testimonials article section {
+    width: 24%;
+    font-size: clamp(1.19rem, -0.26rem + 1.29vw, 1.75rem);
+  }
+  body main .Testimonials article section h4 {
+    font-size: clamp(1.19rem, -0.26rem + 1.29vw, 1.75rem);
+  }
+  body main .Testimonials article section div {
+    width: 50%;
+  }
+  body main .Testimonials article section div img {
+    width: 50%;
+  }
+  body main .Testimonials article section div h2 {
+    font-size: clamp(2.5rem, -0.23rem + 2.43vw, 3.56rem);
+  }
+  body main .Testimonials article section h3 {
+    font-size: clamp(1.44rem, -0.17rem + 1.43vw, 2.06rem);
+  }
+  body main .About {
+    font-size: clamp(1.19rem, -0.26rem + 1.29vw, 1.75rem);
+    flex-direction: row;
+    justify-content: center;
+    gap: 14em;
+  }
+  body main .About article {
+    width: 30%;
+  }
+  body main .About article div h2 {
+    font-size: clamp(3.56rem, -0.62rem + 3.71vw, 5.19rem);
+  }
+  body main .About article div h3 {
+    font-size: clamp(3rem, -0.37rem + 3vw, 4.31rem);
+  }
+  body main .About article p {
+    font-size: clamp(1.44rem, -0.17rem + 1.43vw, 2.06rem);
+  }
+  body main .About img {
+    width: 25%;
+  }
+  body footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body footer img {
+    width: 20%;
+  }
+  body footer nav {
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body footer nav ul {
+    width: 32%;
+  }
+  body footer nav ul li:first-child {
+    padding-top: 2em;
+    font-size: clamp(1.75rem, -0.18rem + 1.71vw, 2.5rem);
+  }
+  body footer nav ul li {
+    font-size: clamp(1.44rem, -0.17rem + 1.43vw, 2.06rem);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

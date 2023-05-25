@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+//colors
+$green: #495e57;
+$yellow: #f4ce14;
+$red: #ee9972;
+$meatCol: #fbdabb;
+$smokeWhite: #edefee;
+$smokeBlack: #333333;
+
+//320=899 sizes
+$sPh_55-95: clamp(
+  3.44rem,
+  calc(2.06rem + 6.91vw),
+  5.94rem
+); //this is not for font
+//This is for sizes 320-899 px width
+$sPh_48-119: clamp(3rem, calc(0.55rem + 12.26vw), 7.44rem);
+$sPh_40-99: clamp(2.5rem, calc(0.46rem + 10.19vw), 6.19rem);
+$sPh_33-82: clamp(2.06rem, calc(0.37rem + 8.45vw), 5.13rem);
+$sPh_28-68: clamp(1.75rem, calc(0.37rem + 6.9vw), 4.25rem);
+$sPh_19-48: clamp(1.19rem, calc(0.19rem + 5vw), 3rem);
+$sPh_16-40: clamp(1rem, calc(0.17rem + 4.14vw), 2.5rem);
+$sPh_13-33: clamp(0.81rem, calc(0.12rem + 3.45vw), 2.06rem);
+//This is for sizes 900-1199 px width 
+$sTab_19-23px: clamp(1.19rem, calc(0.43rem + 1.34vw), 1.44rem);
+$sTab_48-57px: clamp(3.00rem, calc(1.31rem + 3.01vw), 3.56rem);
+$sTab_40-48px: clamp(2.50rem, calc(0.99rem + 2.68vw), 3.00rem);
+$sTab_16-19px:clamp(1.00rem, calc(0.44rem + 1.00vw), 1.19rem);
+$sTab_13-16px: clamp(0.81rem, calc(0.25rem + 1.00vw), 1.00rem);
+$sTab_28-33px: clamp(1.75rem, calc(0.81rem + 1.67vw), 2.06rem);
+$sTab_33-40px:clamp(2.06rem, calc(0.75rem + 2.34vw), 2.50rem);
+//This is for sizes 1200-1799 px width
+$sPcSm_19-28px: clamp(1.19rem, calc(0.06rem + 1.50vw), 1.75rem);
+$sPcSm_48-69px: clamp(3.00rem, calc(0.37rem + 3.51vw), 4.31rem);
+$sPcSm_40-57px: clamp(2.50rem, calc(0.37rem + 2.84vw), 3.56rem);
+$sPcSm_16-23px:clamp(1.00rem, calc(0.12rem + 1.17vw), 1.44rem);
+$sPcSm_13-19px: clamp(0.81rem, calc(0.06rem + 1.00vw), 1.19rem);
+$sPcSm_28-40px: clamp(1.75rem, calc(0.25rem + 2.00vw), 2.50rem);
+$sPcSm_33-48px:clamp(2.06rem, calc(0.18rem + 2.50vw), 3.00rem);
+//This is for sizes 1800-2500 px width
+$sPcBig_28-40px: clamp(1.75rem, calc(-0.18rem + 1.71vw), 2.50rem);
+$sPcBig_69-99px: clamp(4.31rem, calc(-0.51rem + 4.29vw), 6.19rem);
+$sPcBig_57-83px: clamp(3.56rem, calc(-0.62rem + 3.71vw), 5.19rem);
+$sPcBig_23-33px:clamp(1.44rem, calc(-0.17rem + 1.43vw), 2.06rem);
+$sPcBig_19-28px: clamp(1.19rem, calc(-0.26rem + 1.29vw), 1.75rem);
+$sPcBig_40-57px: clamp(2.50rem, calc(-0.23rem + 2.43vw), 3.56rem);
+$sPcBig_48-69px:clamp(3.00rem, calc(-0.37rem + 3.00vw), 4.31rem);
+
+//FontFamily
+$markazi: "Markazi Text", serif;
+$karla: "Karla", sans-serif;

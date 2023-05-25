@@ -1,0 +1,174 @@
+@use "../mixin" as mx;
+@use "../var" as var;
+
+@mixin resSmPc() {
+  header {
+    flex-direction: row;
+    justify-content: space-around;
+
+    img {
+      width: 15%;
+      
+      font-size: var.$sPcSm_19-28px;
+      
+    }
+
+    nav {
+      width: 45%;
+      
+      ul {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        li {
+          font-size: var.$sPcSm_19-28px;
+          margin: 0;
+          border: none;
+        }
+        li:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  main {
+    .HeroSection {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      article {
+        margin-left: 0;
+        width: 30%;
+        > div {
+          h1 {
+            font-size: var.$sPcSm_48-69px;
+          }
+          h2 {
+            font-size: var.$sPcSm_40-57px;
+          }
+        }
+        p {
+          font-size: var.$sPcSm_16-23px;
+        }
+        button {
+          font-size: var.$sPcSm_19-28px;
+        }
+      }
+      img {
+        width: 25%;
+        margin-left: 9vw;
+      }
+    }
+    .Highlights {
+      > div {
+        width: 75%;
+        flex-direction: row;
+        font-size: var.$sPcSm_19-28px;
+        margin-top: 2em;
+        h2 {
+          font-size: var.$sPcSm_40-57px;
+          margin: 0;
+        }
+        button {
+          font-size: var.$sPcSm_19-28px;
+          margin: 0;
+        }
+      }
+      > article {
+        width: 75%;
+        flex-direction: row;
+        justify-content: space-between;
+        section {
+          width: 32%;
+          font-size: var.$sPcSm_13-19px;
+          div {
+            h3 {
+              font-size: var.$sPcSm_28-40px;
+            }
+            p {
+              font-size: var.$sPcSm_13-19px;
+              padding-right: 3em;
+            }
+          }
+          a {
+            font-size: var.$sPcSm_16-23px;
+          }
+        }
+      }
+    }
+    .Testimonials {
+      h1 {
+        font-size: var.$sPcSm_40-57px;
+      }
+      article {
+        width: 75%;
+        flex-direction: row;
+        justify-content: space-between;
+        section {
+          width: 24%;
+          font-size: var.$sPcSm_13-19px;
+          h4 {
+            font-size: var.$sPcSm_13-19px;
+          }
+          div {
+            width: 50%;
+            img {
+              width: 50%;
+            }
+            h2 {
+              font-size: var.$sPcSm_28-40px;
+            }
+          }
+          h3 {
+            font-size: var.$sPcSm_16-23px;
+          }
+        }
+      }
+    }
+    .About {
+      font-size: var.$sPcSm_13-19px;
+      flex-direction: row;
+      justify-content: center;
+      gap: 14em;
+      article {
+        width: 30%;
+        div {
+          h2 {
+            font-size: var.$sPcSm_40-57px;
+          }
+          h3 {
+            font-size: var.$sPcSm_33-48px;
+          }
+        }
+        p {
+          font-size: var.$sPcSm_16-23px;
+        }
+      }
+      img {
+        width: 25%;
+      }
+    }
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    img {
+      width: 20%;
+    }
+    nav {
+      width: 60%;
+      flex-direction: row;
+      justify-content: space-around;
+      ul {
+        width: 32%;
+        li:first-child {
+          padding-top: 2em;
+          font-size: var.$sPcSm_19-28px;
+        }
+        li {
+          font-size: var.$sPcSm_16-23px;
+        }
+      }
+    }
+  }
+}

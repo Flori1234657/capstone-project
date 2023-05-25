@@ -1,0 +1,174 @@
+@use "../mixin" as mx;
+@use "../var" as var;
+
+@mixin resBigPc() {
+  header {
+    flex-direction: row;
+    justify-content: space-around;
+
+    img {
+      width: 15%;
+      
+      font-size: var.$sPcBig_28-40px;
+      
+    }
+
+    nav {
+      width: 45%;
+      
+      ul {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        li {
+          font-size: var.$sPcBig_28-40px;
+          margin: 0;
+          border: none;
+        }
+        li:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  main {
+    .HeroSection {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      article {
+        margin-left: 0;
+        width: 30%;
+        > div {
+          h1 {
+            font-size: var.$sPcBig_69-99px;
+          }
+          h2 {
+            font-size: var.$sPcBig_57-83px;
+          }
+        }
+        p {
+          font-size: var.$sPcBig_23-33px;
+        }
+        button {
+          font-size: var.$sPcBig_28-40px;
+        }
+      }
+      img {
+        width: 25%;
+        margin-left: 9vw;
+      }
+    }
+    .Highlights {
+      > div {
+        width: 75%;
+        flex-direction: row;
+        font-size: var.$sPcBig_28-40px;
+        margin-top: 2em;
+        h2 {
+          font-size: var.$sPcBig_57-83px;
+          margin: 0;
+        }
+        button {
+          font-size: var.$sPcBig_28-40px;
+          margin: 0;
+        }
+      }
+      > article {
+        width: 75%;
+        flex-direction: row;
+        justify-content: space-between;
+        section {
+          width: 32%;
+          font-size: var.$sPcBig_19-28px;
+          div {
+            h3 {
+              font-size: var.$sPcBig_40-57px;
+            }
+            p {
+              font-size: var.$sPcBig_19-28px;
+              padding-right: 3em;
+            }
+          }
+          a {
+            font-size: var.$sPcBig_23-33px;
+          }
+        }
+      }
+    }
+    .Testimonials {
+      h1 {
+        font-size: var.$sPcBig_57-83px;
+      }
+      article {
+        width: 75%;
+        flex-direction: row;
+        justify-content: space-between;
+        section {
+          width: 24%;
+          font-size: var.$sPcBig_19-28px;
+          h4 {
+            font-size: var.$sPcBig_19-28px;
+          }
+          div {
+            width: 50%;
+            img {
+              width: 50%;
+            }
+            h2 {
+              font-size: var.$sPcBig_40-57px;
+            }
+          }
+          h3 {
+            font-size: var.$sPcBig_23-33px;
+          }
+        }
+      }
+    }
+    .About {
+      font-size: var.$sPcBig_19-28px;
+      flex-direction: row;
+      justify-content: center;
+      gap: 14em;
+      article {
+        width: 30%;
+        div {
+          h2 {
+            font-size: var.$sPcBig_57-83px;
+          }
+          h3 {
+            font-size: var.$sPcBig_48-69px
+          }
+        }
+        p {
+          font-size: var.$sPcBig_23-33px;
+        }
+      }
+      img {
+        width: 25%;
+      }
+    }
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    img {
+      width: 20%;
+    }
+    nav {
+      width: 60%;
+      flex-direction: row;
+      justify-content: space-around;
+      ul {
+        width: 32%;
+        li:first-child {
+          padding-top: 2em;
+          font-size: var.$sPcBig_28-40px;
+        }
+        li {
+          font-size: var.$sPcBig_23-33px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,173 @@
+@use "../mixin" as mx;
+@use "../var" as var;
+
+@mixin res() {
+  header {
+    flex-direction: row;
+    justify-content: space-around;
+
+    img {
+      width: 15%;
+      margin: 0;
+      font-size: var.$sTab_19-23px;
+      padding: 0.5em 0;
+    }
+
+    nav {
+      width: 55%;
+      flex-direction: row;
+      ul {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        li {
+          font-size: var.$sTab_19-23px;//5 posht
+          margin: 0;
+          border: none;
+        }
+        li:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  main {
+    .HeroSection {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      article {
+        margin-left: 0;
+        width: 30%;
+        > div {
+          h1 {
+            font-size: var.$sTab_48-57px;
+          }
+          h2 {
+            font-size: var.$sTab_40-48px;
+          }
+        }
+        p {
+          font-size: var.$sTab_16-19px;
+        }
+        button {
+          font-size: var.$sTab_19-23px;
+        }
+      }
+      img {
+        width: 30%;
+        margin-left: 9vw;
+      }
+    }
+    .Highlights {
+      > div {
+        width: 75%;
+        flex-direction: row;
+        font-size: var.$sTab_19-23px;
+        margin-top: 2em;
+        h2 {
+          font-size: var.$sTab_40-48px;
+          margin: 0;
+        }
+        button {
+          font-size: var.$sTab_19-23px;
+          margin: 0;
+        }
+      }
+      > article {
+        width: 75%;
+        flex-direction: row;
+        justify-content: space-between;
+        section {
+          width: 32%;
+          font-size: var.$sTab_13-16px;
+          div {
+            h3 {
+              font-size: var.$sTab_28-33px;
+            }
+            p {
+              font-size: var.$sTab_13-16px;
+            }
+          }
+          a {
+            font-size: var.$sTab_16-19px;
+          }
+        }
+      }
+    }
+    .Testimonials {
+      h1 {
+        font-size: var.$sTab_40-48px;
+      }
+      article {
+        width: 75%;
+        flex-direction: row;
+        justify-content: space-between;
+        section {
+          width: 24%;
+          font-size: var.$sTab_13-16px;
+          h4 {
+            font-size: var.$sTab_13-16px;
+          }
+          div {
+            width: 50%;
+            img {
+              width: 50%;
+            }
+            h2 {
+              font-size: var.$sTab_28-33px;
+            }
+          }
+          h3 {
+            font-size: var.$sTab_16-19px;
+          }
+        }
+      }
+    }
+    .About {
+      font-size: var.$sTab_13-16px;
+      flex-direction: row;
+      justify-content: center;
+      gap: 14em;
+      article {
+        width: 30%;
+        div {
+          h2 {
+            font-size: var.$sTab_40-48px;
+          }
+          h3 {
+            font-size: var.$sTab_33-40px;
+          }
+        }
+        p {
+          font-size: var.$sTab_16-19px;
+        }
+      }
+      img {
+        width: 25%;
+      }
+    }
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    img {
+      width: 20%;
+    }
+    nav {
+      width: 60%;
+      flex-direction: row;
+      justify-content: space-around;
+      ul {
+        width: 32%;
+        li:first-child {
+          padding-top: 2em;
+          font-size: var.$sTab_19-23px;
+        }
+        li {
+          font-size: var.$sTab_16-19px;
+        }
+      }
+    }
+  }
+}

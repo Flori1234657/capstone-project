@@ -1,0 +1,394 @@
+@use "./mixin" as mix;
+@use "./var" as var;
+@use "./mediaquerys/tab" as tab;
+@use "./mediaquerys/smallPc" as smPc;
+@use "./mediaquerys/bigPc" as pcBig;
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+}
+body {
+  width: 100%;
+}
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  width: 100%;
+  @include mix.flex($js: center);
+  div {
+    width: 100%;
+    @include mix.flex($js: space-between, $dr: row);
+    img {
+      width: 45%;
+      margin-left: 2vw;
+
+      font-size: var.$sPh_55-95; //only for padding
+      padding: 0.15em 0;
+    }
+    svg {
+      width: var.$sPh_55-95;
+    }
+  }
+  nav {
+    width: 85%;
+    @include mix.flex();
+
+    ul {
+      list-style-type: none;
+      @include mix.flex($js: flex-start);
+      li {
+        @include mix.font(
+          var.$markazi,
+          var.$sPh_19-48,
+          500,
+          var.$smokeBlack,
+          0 0 0.3em 0,
+          0
+        );
+        border-bottom: 1px solid var.$yellow;
+        cursor: pointer;
+        &:hover,
+        &:focus {
+          color: var.$green;
+        }
+      }
+      li:last-child {
+        margin-bottom: 1em;
+      }
+    }
+  }
+}
+main {
+  width: 100%;
+  @include mix.flex($js: flex-start);
+  .HeroSection {
+    width: 100%;
+    background-color: var.$green;
+    @include mix.flex($al: flex-start, $js: space-around);
+    article {
+      width: 70%;
+      @include mix.flex($al: flex-start);
+      margin-left: 6vw;
+      > div {
+        width: 100%;
+        @include mix.flex($al: flex-start, $js: center);
+        line-height: 0.7;
+        h1 {
+          @include mix.font(
+            var.$markazi,
+            var.$sPh_48-119,
+            500,
+            var.$yellow,
+            0.7em 0 0 0,
+            0
+          );
+        }
+        h2 {
+          @include mix.font(
+            var.$markazi,
+            var.$sPh_40-99,
+            400,
+            var.$smokeWhite,
+            0,
+            0
+          );
+        }
+      }
+      p {
+        @include mix.font(
+          var.$karla,
+          var.$sPh_16-40,
+          300,
+          var.$smokeWhite,
+          0,
+          1.5em 0 0 0
+        );
+      }
+      button {
+        @include mix.btn(
+          var.$markazi,
+          var.$sPh_19-48,
+          600,
+          var.$smokeBlack,
+          0.3em 0.6em,
+          0.5em 0 2em 0,
+          var.$yellow,
+          0.2em
+        );
+      }
+    }
+  }
+  .Highlights {
+    width: 100%;
+    @include mix.flex($js: flex-start);
+    > div {
+      @include mix.flex($js: space-between);
+      h2 {
+        @include mix.font(
+          var.$markazi,
+          var.$sPh_40-99,
+          600,
+          var.$smokeBlack,
+          0,
+          0.7em 0 0 0
+        );
+      }
+      button {
+        @include mix.btn(
+          var.$markazi,
+          var.$sPh_19-48,
+          600,
+          var.$smokeBlack,
+          0.3em 0.6em,
+          0.5em 0 2em 0,
+          var.$yellow,
+          0.2em
+        );
+      }
+    }
+    > article {
+      width: 100%;
+      @include mix.flex();
+      section {
+        width: 80%;
+        background-color: var.$smokeWhite;
+        @include mix.flex($al: flex-start);
+        font-size: var.$sPh_13-33; //Onliny for using margins and paddings with em
+        border-radius: 0.5em;
+        margin-bottom: 2em;
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+        div {
+          width: 85%;
+          margin-left: 7%;
+          h3 {
+            @include mix.font(
+              var.$markazi,
+              var.$sPh_28-68,
+              600,
+              var.$smokeBlack,
+              0,
+              0.5em 0 0 0
+            );
+          }
+          p {
+            @include mix.font(
+              var.$karla,
+              var.$sPh_13-33,
+              500,
+              var.$smokeBlack,
+              0,
+              0
+            );
+          }
+        }
+        a {
+          @include mix.font(
+            var.$karla,
+            var.$sPh_16-40,
+            700,
+            var.$smokeBlack,
+            0 1.15em,
+            1em 0 0 0
+          );
+          padding-bottom: 1.32em;
+          cursor: pointer;
+        }
+        a:hover,
+        a:focus {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .Testimonials {
+    width: 100%;
+    background-color: var.$smokeWhite;
+    @include mix.flex($js: flex-start);
+    h1 {
+      @include mix.font(
+        var.$markazi,
+        var.$sPh_40-99,
+        600,
+        var.$green,
+        0,
+        0.7em 0 0.6em 0
+      );
+    }
+    article {
+      width: 85%;
+      @include mix.flex($js: flex-start);
+      section {
+        @include mix.flex($al: flex-start);
+        background-color: var.$yellow;
+        font-size: var.$sPh_13-33;
+        border-radius: 0.5em;
+        margin-bottom: 2em;
+        h4 {
+          @include mix.font(
+            var.$karla,
+            var.$sPh_13-33,
+            500,
+            var.$smokeBlack,
+            1em 0 0 0,
+            0 0 0.5em 1.1em
+          );
+        }
+        div {
+          width: 50%;
+          @include mix.flex($dr: row, $js: flex-start);
+          margin-left: 5%;
+          img {
+            width: 20%;
+            border-radius: 50%;
+          }
+          h2 {
+            @include mix.font(
+              var.$markazi,
+              var.$sPh_28-68,
+              600,
+              var.$smokeBlack,
+              0 0.5em,
+              0
+            );
+          }
+        }
+        h3 {
+          @include mix.font(
+            var.$karla,
+            var.$sPh_16-40,
+            700,
+            var.$smokeBlack,
+            1em 0,
+            0 0 0 0.9em
+          );
+        }
+      }
+    }
+  }
+  .About {
+    width: 100%;
+    @include mix.flex($js: flex-start);
+    font-size: var.$sPh_13-33;
+    margin-bottom: 1.8em;
+    article {
+      width: 85%;
+      @include mix.flex($js: flex-start);
+      div {
+        width: 100%;
+        @include mix.flex($js: center, $al: flex-start);
+        line-height: 0.7;
+        h2 {
+          @include mix.font(
+            var.$markazi,
+            var.$sPh_40-99,
+            600,
+            var.$green,
+            0,
+            0.7em 0 0 0
+          );
+        }
+        h3 {
+          @include mix.font(
+            var.$markazi,
+            var.$sPh_33-82,
+            600,
+            var.$smokeBlack,
+            0,
+            0
+          );
+        }
+      }
+      p {
+        @include mix.font(
+          var.$karla,
+          var.$sPh_16-40,
+          500,
+          var.$smokeBlack,
+          0 0 2em 0,
+          1.5em 0 0 0
+        );
+      }
+    }
+    img {
+      width: 80%;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: var.$green;
+  @include mix.flex($js: flex-start);
+  img {
+    width: 50%;
+  }
+  nav {
+    width: 85%;
+    @include mix.flex($js: flex-start);
+
+    ul {
+      width: 100%;
+      @include mix.flex($js: flex-start, $al: flex-start);
+      list-style-type: none;
+      align-self: flex-start;
+      li:first-child {
+        @include mix.font(
+          var.$karla,
+          var.$sPh_19-48,
+          500,
+          var.$smokeWhite,
+          0 0 0.5em 0,
+          0
+        );
+      }
+      li {
+        @include mix.font(
+          var.$markazi,
+          var.$sPh_16-40,
+          400,
+          var.$smokeWhite,
+          0 0 0.3em 0,
+          0
+        );
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+      li:last-child {
+        padding-bottom: 1.5em;
+      }
+    }
+  }
+}
+
+//Media Queries
+@include mix.respond(tablet) {
+  body{
+    @include tab.res();
+  }
+}
+@include mix.respond(smallPc) {
+  body{
+    @include smPc.resSmPc();
+  }
+}
+@include mix.respond(bigPc) {
+  body{
+    @include pcBig.resBigPc();
+  }
+}
