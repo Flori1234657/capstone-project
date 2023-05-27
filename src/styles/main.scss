@@ -66,6 +66,14 @@ header {
       li:last-child {
         margin-bottom: 1em;
       }
+      a {
+        text-decoration: none;
+        color: var.$smokeBlack;
+        &:hover,
+        &:focus {
+          color: var.$green;
+        }
+      }
     }
   }
 }
@@ -378,17 +386,17 @@ footer {
 
 //Media Queries
 @include mix.respond(tablet) {
-  body{
+  body {
     @include tab.res();
   }
 }
 @include mix.respond(smallPc) {
-  body{
+  body {
     @include smPc.resSmPc();
   }
 }
 @include mix.respond(bigPc) {
-  body{
+  body {
     @include pcBig.resBigPc();
   }
 }

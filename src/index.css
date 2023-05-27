@@ -77,6 +77,13 @@ header nav ul li:hover, header nav ul li:focus {
 header nav ul li:last-child {
   margin-bottom: 1em;
 }
+header nav ul a {
+  text-decoration: none;
+  color: #333333;
+}
+header nav ul a:hover, header nav ul a:focus {
+  color: #495e57;
+}
 
 main {
   width: 100%;
