@@ -1,0 +1,124 @@
+@use "../mixin" as mix;
+@use "../var" as var;
+
+@mixin styles() {
+  form {
+    width: 90%;
+    max-width: 700px;
+    background-color: var.$green;
+    align-self: center;
+    font-size: var.$sPh_16-40;
+    border-radius: 0.7em;
+    margin-top: 3em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    @include mix.flex($al: flex-start);
+    div {
+      width: 100%;
+      @include mix.flex($al: flex-start);
+      label {
+        @include mix.font(
+          var.$karla,
+          var.$sPh_16-40,
+          500,
+          var.$smokeWhite,
+          1em 1.6em,
+          0
+        );
+      }
+      input,
+      select {
+        @include mix.font(
+          var.$karla,
+          var.$sPh_13-33,
+          500,
+          var.$smokeBlack,
+          0.5em,
+          0 1.9em
+        );
+        border-radius: 0.7em;
+        border: none;
+      }
+    }
+    button {
+      @include mix.font(
+        var.$karla,
+        var.$sPh_16-40,
+        600,
+        var.$smokeBlack,
+        0.5em 1em,
+        1.2em 1.6em
+      );
+      border: none;
+      border-radius: 0.7em;
+      background-color: var.$yellow;
+    }
+  }
+  @include mix.respond(tablet) {
+    form {
+      width: 50%;
+      max-width: 500px;
+      font-size: var.$sTab_16-19px;
+      div {
+        width: 100%;
+        @include mix.flex($al: flex-start);
+        label {
+          font-size: var.$sTab_16-19px;
+        }
+        input,
+        select {
+          font-size: var.$sTab_13-16px;
+        }
+      }
+      button {
+        font-size: var.$sTab_16-19px;
+      }
+    }
+  }
+  @include mix.respond(smallPc) {
+    form {
+      width: 50%;
+      max-width: 800px;
+      font-size: var.$sPcSm_19-28px;
+      div {
+        width: 100%;
+        @include mix.flex($al: flex-start);
+        label {
+          font-size: var.$sPcSm_19-28px;
+        }
+        input,
+        select {
+          font-size: var.$sPcSm_16-23px;
+          cursor: pointer;
+        }
+      }
+      button {
+        font-size: var.$sPcSm_19-28px;
+        cursor: pointer;
+      }
+    }
+  }
+  @include mix.respond(bigPc) {
+    form {
+      width: 50%;
+      max-width: 1000px;
+      font-size: var.$sPcBig_28-40px;
+      div {
+        width: 100%;
+        @include mix.flex($al: flex-start);
+        label {
+          font-size: var.$sPcBig_28-40px;
+          padding-left: 1.3em;
+        }
+        input,
+        select {
+          font-size: var.$sPcBig_19-28px;
+        }
+      }
+      button {
+        font-size: var.$sPcBig_28-40px;
+        margin-left: 1.3em;
+      }
+    }
+  }
+}

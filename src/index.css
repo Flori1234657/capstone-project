@@ -23,6 +23,133 @@ body {
   display: flex;
   flex-direction: column;
 }
+#root form {
+  width: 90%;
+  max-width: 700px;
+  background-color: #495e57;
+  align-self: center;
+  font-size: clamp(1rem, 0.17rem + 4.14vw, 2.5rem);
+  border-radius: 0.7em;
+  margin-top: 3em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+#root form div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+#root form div label {
+  font-family: "Karla", sans-serif;
+  font-size: clamp(1rem, 0.17rem + 4.14vw, 2.5rem);
+  font-weight: 500;
+  color: #edefee;
+  padding: 1em 1.6em;
+  margin: 0;
+}
+#root form div input,
+#root form div select {
+  font-family: "Karla", sans-serif;
+  font-size: clamp(0.81rem, 0.12rem + 3.45vw, 2.06rem);
+  font-weight: 500;
+  color: #333333;
+  padding: 0.5em;
+  margin: 0 1.9em;
+  border-radius: 0.7em;
+  border: none;
+}
+#root form button {
+  font-family: "Karla", sans-serif;
+  font-size: clamp(1rem, 0.17rem + 4.14vw, 2.5rem);
+  font-weight: 600;
+  color: #333333;
+  padding: 0.5em 1em;
+  margin: 1.2em 1.6em;
+  border: none;
+  border-radius: 0.7em;
+  background-color: #f4ce14;
+}
+@media only screen and (min-width: 900px) and (orientation: landscape) {
+  #root form {
+    width: 50%;
+    max-width: 500px;
+    font-size: clamp(1rem, 0.44rem + 1vw, 1.19rem);
+  }
+  #root form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  #root form div label {
+    font-size: clamp(1rem, 0.44rem + 1vw, 1.19rem);
+  }
+  #root form div input,
+  #root form div select {
+    font-size: clamp(0.81rem, 0.25rem + 1vw, 1rem);
+  }
+  #root form button {
+    font-size: clamp(1rem, 0.44rem + 1vw, 1.19rem);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #root form {
+    width: 50%;
+    max-width: 800px;
+    font-size: clamp(1.19rem, 0.06rem + 1.5vw, 1.75rem);
+  }
+  #root form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  #root form div label {
+    font-size: clamp(1.19rem, 0.06rem + 1.5vw, 1.75rem);
+  }
+  #root form div input,
+  #root form div select {
+    font-size: clamp(1rem, 0.12rem + 1.17vw, 1.44rem);
+    cursor: pointer;
+  }
+  #root form button {
+    font-size: clamp(1.19rem, 0.06rem + 1.5vw, 1.75rem);
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #root form {
+    width: 50%;
+    max-width: 1000px;
+    font-size: clamp(1.75rem, -0.18rem + 1.71vw, 2.5rem);
+  }
+  #root form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  #root form div label {
+    font-size: clamp(1.75rem, -0.18rem + 1.71vw, 2.5rem);
+    padding-left: 1.3em;
+  }
+  #root form div input,
+  #root form div select {
+    font-size: clamp(1.19rem, -0.26rem + 1.29vw, 1.75rem);
+  }
+  #root form button {
+    font-size: clamp(1.75rem, -0.18rem + 1.71vw, 2.5rem);
+    margin-left: 1.3em;
+  }
+}
 
 header {
   width: 100%;
@@ -30,6 +157,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 header div {
   width: 100%;
