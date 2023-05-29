@@ -1,0 +1,95 @@
+@use "../mixin" as mix;
+@use "../var" as var;
+
+@mixin styles() {
+  .successMessage {
+    width: 80%;
+    max-width: 600px;
+    align-self: center;
+    font-size: var.$sPh_19-48;
+    margin-top: 2em;
+    background-color: var.$meatCol;
+    border-radius: 0.4em;
+    @include mix.flex();
+    h2 {
+      @include mix.font(
+        var.$markazi,
+        var.$sPh_28-68,
+        500,
+        var.$smokeBlack,
+        0.5em 1em,
+        0
+      );
+      text-align: center;
+    }
+    svg {
+      width: 20%;
+      font-size: var.$sPh_19-48;
+      margin: 0 0 0.8em 0;
+    }
+    button {
+      @include mix.btn(
+        var.$markazi,
+        var.$sPh_28-68,
+        600,
+        var.$smokeBlack,
+        0.3em 0.6em,
+        0.5em 0 1em 0,
+        var.$smokeWhite,
+        0.2em
+      );
+      &:hover,
+      &:focus {
+        background-color: var.$yellow;
+      }
+    }
+  }
+  @include mix.respond(tablet) {
+    .successMessage {
+      width: 40%;
+      max-width: 900px;
+      font-size: var.$sTab_19-23px;
+      h2 {
+        font-size: var.$sTab_28-33px;
+      }
+      svg {
+        font-size: var.$sTab_19-23px;
+      }
+      button {
+        font-size: var.$sTab_28-33px;
+      }
+    }
+  }
+  @include mix.respond(smallPc) {
+    .successMessage {
+      width: 30%;
+      max-width: 1000px;
+      font-size: var.$sPcSm_19-28px;
+      h2 {
+        font-size: var.$sPcSm_28-40px;
+      }
+      svg {
+        font-size: var.$sPcSm_19-28px;
+      }
+      button {
+        font-size: var.$sPcSm_28-40px;
+      }
+    }
+  }
+  @include mix.respond(bigPc) {
+    .successMessage {
+      width: 25%;
+      max-width: 1200px;
+      font-size: var.$sPcBig_19-28px;
+      h2 {
+        font-size: var.$sPcBig_28-40px;
+      }
+      svg {
+        font-size: var.$sPcBig_19-28px;
+      }
+      button {
+        font-size: var.$sPcBig_28-40px;
+      }
+    }
+  }
+}

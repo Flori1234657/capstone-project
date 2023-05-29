@@ -3,11 +3,11 @@ import BookingForm from "../components/BookingForm";
 import BookingPage from "../pages/BookingPage";
 
 describe(BookingForm, () => {
-  it("If times are seted correctlly", () => {
+  it("Values not to bee empty string", () => {
     const { getByTestId } = render(<BookingForm />);
-    const datFunc = getByTestId("dat");
-    fireEvent.select(datFunc);
-    const datVal = getByTestId("tim").textContent;
-    expect(datVal).toMatch(/\d+/g);
+    const gsInp = getByTestId("gs");
+    fireEvent.input(gsInp);
+    const gsVal = getByTestId("gs").textContent;
+    expect(gsVal).toMatch(/\d+/g);
   });
 });

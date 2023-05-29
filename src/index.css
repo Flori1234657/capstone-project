@@ -150,6 +150,96 @@ body {
     margin-left: 1.3em;
   }
 }
+#root .successMessage {
+  width: 80%;
+  max-width: 600px;
+  align-self: center;
+  font-size: clamp(1.19rem, 0.19rem + 5vw, 3rem);
+  margin-top: 2em;
+  background-color: #fbdabb;
+  border-radius: 0.4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#root .successMessage h2 {
+  font-family: "Markazi Text", serif;
+  font-size: clamp(1.75rem, 0.37rem + 6.9vw, 4.25rem);
+  font-weight: 500;
+  color: #333333;
+  padding: 0.5em 1em;
+  margin: 0;
+  text-align: center;
+}
+#root .successMessage svg {
+  width: 20%;
+  font-size: clamp(1.19rem, 0.19rem + 5vw, 3rem);
+  margin: 0 0 0.8em 0;
+}
+#root .successMessage button {
+  font-family: "Markazi Text", serif;
+  font-size: clamp(1.75rem, 0.37rem + 6.9vw, 4.25rem);
+  font-weight: 600;
+  color: #333333;
+  padding: 0.3em 0.6em;
+  margin: 0.5em 0 1em 0;
+  background-color: #edefee;
+  border: none;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+#root .successMessage button:hover, #root .successMessage button:focus {
+  background-color: #f4ce14;
+}
+@media only screen and (min-width: 900px) and (orientation: landscape) {
+  #root .successMessage {
+    width: 40%;
+    max-width: 900px;
+    font-size: clamp(1.19rem, 0.43rem + 1.34vw, 1.44rem);
+  }
+  #root .successMessage h2 {
+    font-size: clamp(1.75rem, 0.81rem + 1.67vw, 2.06rem);
+  }
+  #root .successMessage svg {
+    font-size: clamp(1.19rem, 0.43rem + 1.34vw, 1.44rem);
+  }
+  #root .successMessage button {
+    font-size: clamp(1.75rem, 0.81rem + 1.67vw, 2.06rem);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #root .successMessage {
+    width: 30%;
+    max-width: 1000px;
+    font-size: clamp(1.19rem, 0.06rem + 1.5vw, 1.75rem);
+  }
+  #root .successMessage h2 {
+    font-size: clamp(1.75rem, 0.25rem + 2vw, 2.5rem);
+  }
+  #root .successMessage svg {
+    font-size: clamp(1.19rem, 0.06rem + 1.5vw, 1.75rem);
+  }
+  #root .successMessage button {
+    font-size: clamp(1.75rem, 0.25rem + 2vw, 2.5rem);
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #root .successMessage {
+    width: 25%;
+    max-width: 1200px;
+    font-size: clamp(1.19rem, -0.26rem + 1.29vw, 1.75rem);
+  }
+  #root .successMessage h2 {
+    font-size: clamp(1.75rem, -0.18rem + 1.71vw, 2.5rem);
+  }
+  #root .successMessage svg {
+    font-size: clamp(1.19rem, -0.26rem + 1.29vw, 1.75rem);
+  }
+  #root .successMessage button {
+    font-size: clamp(1.75rem, -0.18rem + 1.71vw, 2.5rem);
+  }
+}
 
 header {
   width: 100%;

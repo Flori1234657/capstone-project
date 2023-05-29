@@ -15,7 +15,6 @@ const BookingForm = ({ availableTimes, dispatch, handleSubmit }) => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    console.log(formik.values);
     setCheckIfNone(true);
 
     for (const key in formik.values) {
@@ -44,6 +43,7 @@ const BookingForm = ({ availableTimes, dispatch, handleSubmit }) => {
           onChange={formik.handleChange}
           onSelect={dispatch}
           value={formik.values.Date}
+          aria-label="On Click"
           required
         />
       </div>
@@ -56,6 +56,7 @@ const BookingForm = ({ availableTimes, dispatch, handleSubmit }) => {
           onChange={formik.handleChange}
           value={formik.values.Time}
           required
+          aria-label="On Select"
         >
           {availableTimes.availableTime.map((el) => (
             <option key={`k${el}`}>{el}</option>
@@ -69,9 +70,11 @@ const BookingForm = ({ availableTimes, dispatch, handleSubmit }) => {
           min="1"
           max="10"
           id="guests"
+          data-testid="gs"
           name="Guests"
           onChange={formik.handleChange}
           value={formik.values.Guests}
+          aria-label="On Click"
           required
         />
       </div>
@@ -82,6 +85,7 @@ const BookingForm = ({ availableTimes, dispatch, handleSubmit }) => {
           name="Occasion"
           onChange={formik.handleChange}
           value={formik.values.Occasion}
+          aria-label="On Select"
           required
         >
           <option value="" disabled></option>

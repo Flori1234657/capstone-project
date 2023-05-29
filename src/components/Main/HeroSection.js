@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import HeroImg from "../.././assets/images/restaurant.jpg";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const nav = useNavigate();
   const [windo, setWindo] = useState(false);
   const windows = () => {
     window.innerWidth >= 320 && window.innerWidth <= 899
@@ -22,7 +24,9 @@ const HeroSection = () => {
           Lorem ipsum dolor sit amet, consectetur Mdipiscing elit, sed do
           eiusmod.
         </p>
-        <button type="button">Reserve a table</button>
+        <button type="button" onClick={() => nav("/booking")}>
+          Reserve a table
+        </button>
       </article>
       {windo ? <img src={HeroImg} alt="HeroImg" /> : ""}
     </section>
